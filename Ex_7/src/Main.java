@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		char letra = 'a';
+		String palavra = letra + " doidaaa";
+		
+		System.out.println(palavra);
+
+	}
+
+}

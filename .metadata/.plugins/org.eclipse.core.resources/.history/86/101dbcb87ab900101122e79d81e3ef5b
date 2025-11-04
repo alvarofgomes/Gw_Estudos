@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Perfil {
+
+	public static void main(String[] args) {
+		
+		String name;
+		
+		System.out.println("Digite Seu nome: ");
+		name = sc.nextLine();
+		
+		System.out.printf("Olá %s", name);
+
+	}
+
+}
