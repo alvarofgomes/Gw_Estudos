@@ -13,8 +13,7 @@ public class Main {
 		meuFilme.anoDeLancamento = 1970;
 		meuFilme.duracaoEmMinutos = 180;
 		
-		System.out.println(meuFilme.nome);
-		System.out.println(meuFilme.anoDeLancamento);
+		meuFilme.exibirFichaTecnica();
 		
 		sc.close();
 	}
