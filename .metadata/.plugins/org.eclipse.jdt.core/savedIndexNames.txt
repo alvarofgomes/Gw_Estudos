@@ -3,15 +3,19 @@ INDEX VERSION 1.134+/home/estagiario5/Documentos/Estudos_Gw/.metadata/.plugins/o
 1865797976.index
 1863084801.index
 4188656512.index
+3588834394.index
+1621131834.index
 4127537851.index
 1723475754.index
+4028604331.index
 2255474228.index
 1303830268.index
 2164394541.index
 281704117.index
 4274263961.index
-2311268111.index
 3467506216.index
+2311268111.index
+2733536460.index
 526819214.index
 4050189986.index
 2393826070.index
@@ -21,3 +25,4 @@ INDEX VERSION 1.134+/home/estagiario5/Documentos/Estudos_Gw/.metadata/.plugins/o
 1741506083.index
 396866220.index
 443208520.index
+2266541885.index
