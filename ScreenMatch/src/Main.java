@@ -1,5 +1,6 @@
 import br.com.alura.screenmatch.modelos.*;
 import java.util.*;
+import br.com.alura.screenmatch.calculos.*;
 
 public class Main {
 
@@ -33,6 +34,18 @@ public class Main {
 		lost.exibirFichaTecnica();
 		lost.setMinutosPorEpisodio(50);
 		System.out.println("Duração para maratonar serie: " + lost.getDuracaoEmMinutos());
+		
+		Filme outroFilme = new Filme();
+		
+		outroFilme.setNome("Avatar");
+		outroFilme.setAnoDeLancamento(2023);
+		outroFilme.setDuracaoEmMinutos(200);
+		
+		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+		calculadora.inclui(meuFilme);
+		calculadora.inclui(outroFilme);
+		calculadora.inclui(lost);
+		System.out.println(calculadora.getTempoTotal());
 		
 		sc.close();
 	}
