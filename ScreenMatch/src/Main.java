@@ -56,6 +56,23 @@ public class Main {
 		episodio.setTotalVisualizacoes(300);
 		filtro.filtrar(episodio);
 		
+		var filmeDoPaulo = new Filme();
+		filmeDoPaulo.setDuracaoEmMinutos(200);
+		filmeDoPaulo.setNome("Dogville");
+		filmeDoPaulo.setAnoDeLancamento(2003);
+		filmeDoPaulo.avalia(10);
+		
+		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+		
+		listaDeFilmes.add(filmeDoPaulo);
+		listaDeFilmes.add(meuFilme);
+		listaDeFilmes.add(outroFilme);
+		
+		System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+		System.out.println("Primeiro Filme: " + listaDeFilmes.get(0).getNome());
+		
+		System.out.println("toString Do filme: " + listaDeFilmes.toString());
+		
 		sc.close();
 	}
 
