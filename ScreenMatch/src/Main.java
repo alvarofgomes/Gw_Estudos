@@ -47,6 +47,15 @@ public class Main {
 		calculadora.inclui(lost);
 		System.out.println(calculadora.getTempoTotal());
 		
+		FiltroRecomendacao filtro = new FiltroRecomendacao();
+		filtro.filtrar(meuFilme);
+		
+		Episodios episodio = new Episodios();
+		episodio.setNumero(1);
+		episodio.setSerie(lost);
+		episodio.setTotalVisualizacoes(300);
+		filtro.filtrar(episodio);
+		
 		sc.close();
 	}
 
