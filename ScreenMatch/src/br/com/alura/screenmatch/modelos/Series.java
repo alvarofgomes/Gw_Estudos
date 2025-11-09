@@ -27,7 +27,7 @@ public class Series extends Titulo{
 		this.episodiosPorTemporadas = episodiosPorTemporadas;
 	}
 	
-	public boolean isAtiva() {
+	public boolean getAtiva() {
 		return ativa;
 	}
 	
@@ -46,6 +46,11 @@ public class Series extends Titulo{
 	@Override
 	public int getDuracaoEmMinutos() {
 		return getTemporadas() * getEpisodiosPorTemporadas() * getMinutosPorEpisodio();
+	}
+	
+	@Override
+	public String toString() {
+		return "Serie: " + getNome();
 	}
 	
 }
