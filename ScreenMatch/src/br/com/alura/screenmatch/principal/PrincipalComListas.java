@@ -1,12 +1,15 @@
 package br.com.alura.screenmatch.principal;
 
+import java.text.CollationElementIterator;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Series;
 import br.com.alura.screenmatch.modelos.Titulo;
 
-public class PrincipalComListas {
+public class PrincipalComListas{
 
 	public static void main(String[] args) {
 
@@ -27,13 +30,32 @@ public class PrincipalComListas {
 		
 		for(Titulo item : lista) {
 			
-			Filme filme = (Filme) item;
+			System.out.println(item.getNome());
 			
-			System.out.println(item);
-			System.out.println("Classificação: " + filme.getClassificacao());
+			if(item instanceof Filme filme && filme.getClassificacao() > 2) {
+			
+				System.out.println(item);
+				System.out.println("Classificação: " + filme.getClassificacao());
+				
+			}
 			
 		}
-
+		
+		ArrayList<String> buscarPorArtista = new ArrayList<>();
+		
+		buscarPorArtista.add("Adam Sandler");
+		buscarPorArtista.add("Paulo");
+		buscarPorArtista.add("Jacqueline");
+		System.out.println(buscarPorArtista);
+		
+		Collections.sort(buscarPorArtista);
+		System.out.println("Depois da oredenação");
+		System.out.println(buscarPorArtista);
+		System.out.println("Lista de titulos ordenados");
+		Collections.sort(lista);
+		
+		
+		System.out.println(lista);
 	}
 
 }
