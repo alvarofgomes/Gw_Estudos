@@ -3,6 +3,7 @@ package br.com.alura.screenmatch.principal;
 import java.text.CollationElementIterator;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Filme;
@@ -53,8 +54,9 @@ public class PrincipalComListas{
 		System.out.println(buscarPorArtista);
 		System.out.println("Lista de titulos ordenados");
 		Collections.sort(lista);
-		
-		
+		System.out.println(lista);
+		lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+	
 		System.out.println(lista);
 	}
 
